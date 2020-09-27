@@ -5,27 +5,7 @@
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Arpita Singh | Software Engineer &amp; UX Enthusiast</title>
-  <link rel="shortcut icon" href="http://brittanychiang.com/img/logo-black.png" hreflang="en-us">
-
-  <meta property="og:title" content="Resume | Arpita Singh" />
-  <meta property="og:description" content="Design-minded, detail oriented software developer passionate about combining beautiful code with beautiful design." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.brittanychiang.com/resume" />
-  <meta property="og:site_name" content="Resume | Arpita Singh" />
-  <!-- <meta property="og:image" content="http://brittanychiang.com/img/og.png" /> -->
-  <meta property="og:image:width" content="1280" />
-  <meta property="og:image:height" content="672" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:locale" content="en_US">
-
-  <meta name="description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
-  <meta name="keywords" content="design, development, web, bchiang7, brittany, chiang, javascript, northeastern">
-  <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
-
-  <meta itemprop="name" content="Resume | Arpita Singh">
-  <meta itemprop="description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
-  <!-- <meta itemprop="image" content="http://brittanychiang.com/img/og.png"> -->
+  <title>Arpita Singh | Software Engineer</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -39,14 +19,16 @@
   <script type="text/jsx">
 
     var DATA = {
-      name: "Hey, I'm Arpita",
-      subtext: "Developer & UX Enthusiast",
+      name: "Hello, I'm Arpita",
+      subtext: "Developer, UX Enthusiast and Artist",
       jobStatus: "Software Engineer @ Amadeus Software Labs",
       twitterURL: 'https://twitter.com/arpita505',
       instaURL: 'https://www.instagram.com/arpita505_/',
       githubURL: 'https://github.com/arpita505',
       linkedinURL: 'https://www.linkedin.com/in/arpita505',
-      resumeURL: 'http://brittanychiang.com/resume.pdf'
+      websiteURL: 'https://arpita505.github.io/',
+      dribbleURL: 'https://dribbble.com/arpita505',
+      resumeURL: 'https://drive.google.com/file/d/1o90HlPpCnPttqLqEKEOJ3Y_C8yAoF284/view'
     }
 
     var App = React.createClass({
@@ -61,6 +43,8 @@
               instaURL={this.props.profileData.instaURL}
               githubURL={this.props.profileData.githubURL}
               linkedinURL={this.props.profileData.linkedinURL}
+              websiteURL={this.props.profileData.websiteURL}
+              dribbleURL={this.props.profileData.dribbleURL}
             />
             <Right
               intro={this.props.profileData.intro}
@@ -82,10 +66,12 @@
                 <div className="subtext">{this.props.subtext}</div>
                 <div className="jobStatus">{this.props.jobStatus}</div>
                 <div className="social-links">
-                  <a href={this.props.twitterURL} target="_blank"><i className="fa fa-twitter"></i></a>
-                  <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>
                   <a href={this.props.githubURL} target="_blank"><i className="fa fa-github"></i></a>
                   <a href={this.props.linkedinURL}  target="_blank"><i className="fa fa-linkedin"></i></a>
+                  <a href={this.props.websiteURL}  target="_blank"><i className="fa fa-globe"></i></a>
+                  <a href={this.props.dribbleURL}  target="_blank"><i className="fa fa-dribbble"></i></a>
+                  <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>
+
                 </div>
               </div>
             </div>
@@ -143,9 +129,6 @@
                     </div>
                     <div className="title">Software Engineer</div>
                     <ul className="description">
-                      <li>Build out major features of Starry’s customer-facing android app with Cordova, utilizing JavaScript (ES6), Handlebars, CSS3, Node.js, and Backbone.js</li>
-                      <li>Propose and implement design and engineering solutions to ensure optimal and coherent user experiences for Starry’s iOS and android apps</li>
-                      <li>Engineer and maintain RESTful cloud services responsible for communicating with the Starry Station router</li>
                     </ul>
                   </div>
                   <div className="exp-item">
@@ -155,9 +138,9 @@
                     </div>
                     <div className="title">Associate - Data Science</div>
                     <ul className="description">
-                      <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</li>
-                      <li>Tested code in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</li>
-                      <li>Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Dept. of Defense, and more</li>
+                      <li>Contributed to a cross-divisional data analytics project across all phases of the data science pipeline.</li>
+                      <li>Applied unsupervised clustering method to identify employee expenditure outliers as risk index and supervised machine learning methods to identify features with the highest impact on risk index.</li>
+                      <li>Worked with different analytical libraries and packages in Python to clean, analyze and model the multi-layered data to perform prediction analysis for the Integrity and Compliance team.</li>
                     </ul>
                   </div>
                   <div className="exp-item">
@@ -167,9 +150,9 @@
                     </div>
                     <div className="title">Software Development Intern</div>
                     <ul className="description">
-                      <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</li>
-                      <li>Tested code in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</li>
-                      <li>Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Dept. of Defense, and more</li>
+                      <li>Worked as a Frontend Developer</li>
+                      <li>Made user experience seamless by adding more functionalities to the solution that would reduce the workload-peaks for key users during critical health authority submission phases using React.js and Redux</li>
+                      <li>Performed Sentiment Analysis of employee reviews for Novartis scraped from social platforms like Glassdoor and Twitter</li>
                     </ul>
                   </div>
                 </div>
@@ -187,21 +170,72 @@
               <div className="projects">
                 <h4>Projects</h4>
                 <div className="content">
-                  <div className="project-item">
-                    <a className="project-title" href="http://brittanychiang.com/" target="_blank">brittanychiang.com</a>
-                    <p className="project-desc">Portfolio site designed and coded from scratch to showcase my skills and past work</p>
+                <div className="project-item">
+                  <div className="project-title">Generic Search Optimizer</div>
+                  <p className="project-desc">  <ul className="description">
+                      <li>As a part of research project shifting paradigm from SQL based searching to Intelligent Searching using the N-layered Markov chain model.</li>
+                      <li> Improved the search results by developing dictionaries and using the Ngram model for predicting the correct word.</li>
+                      <li>Segmentation, Query correction, Tags Generation developed to increase the accuracy of results using Pandas framework.</li>
+                      <li>A correlation of 0.84 achieved between our model and word2vec for the predicted word.</li>
+                    </ul> </p>
+                </div>
+                <div className="project-item">
+                <a className="project-title" href="http://arpita505.github.io/" target="_blank">One Stop</a>
+                <p className="project-desc">  <ul className="description">
+                    <li>An Android Application made in Java to explore places of interest near your current location using Google API’s and Maps. </li>
+                    <li> Offline storage, route navigation and notifications support included.</li>
+                    <li>A lot of help for tourists to navigate through their current city with an easy to use user interface.</li>
+                    <li>Live on the Google Play Store.</li>
+                  </ul> </p>
                   </div>
                   <div className="project-item">
-                    <div className="project-title">CourseSource</div>
-                    <p className="project-desc">Web app built on the MEAN (MongoDB, Express, Angular, Node) stack for my web development class. Created with the intention of providing students a better experience browsing the courses offered at Northeastern</p>
+                    <a className="project-title" href="http://arpita505.github.io/" target="_blank">Personal Website</a>
+                    <p className="project-desc"><li>Personal website designed and coded in gatsby and react. Hosted on github pages.</li></p>
                   </div>
                   <div className="project-item">
-                    <a className="project-title" href="http://nuwit.ccs.neu.edu/" target="_blank">NU Women in Tech</a>
-                    <p className="project-desc">Club website redesigned and redeveloped as while serving as web chair on e-board</p>
+                  <a className="project-title" href="https://github.com/arpita505/Meme-Generator" target="_blank">Deal With It!</a>
+                    <p className="project-desc"><li>Automatic Meme Generator Web App using OpenCV and dLib.</li></p>
                   </div>
                   <div className="project-item">
-                    <a className="project-title" href="http://onecardforall.mullenloweus.com/" target="_blank">One Card For All</a>
-                    <p className="project-desc">2015 Mullen Lowe U.S. holiday site built around an algorithm that generated a holiday greeting to each and every person on the planet</p>
+                    <a className="project-title" href="https://github.com/arpita505/Face-Mask-Detection/" target="_blank">Face Mask Detector</a>
+                    <p className="project-desc"><li>Face Mask Detection Web App made with OpenCV, Keras,TensorFlow, and Deep Learning</li></p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="https://github.com/arpita505/CovidDataAnalysis" target="_blank">Covid Data Analysis</a>
+                    <p className="project-desc"><li>Predicting and plotting future coronavirus cases for Indian States using LSTMs in PyTorch</li></p>
+                  </div>
+                  <div className="project-item">
+                    <a className="project-title" href="https://github.com/arpita505/FlutterThemeChanger" target="_blank">FlutterThemeChanger</a>
+                    <p className="project-desc"><li>Flutter app made using hive and provider to change theme of the phone</li></p>
+                  </div>
+                </div>
+              </div>
+              <div className="experience">
+                <h4>Certifications</h4>
+                <div className="content">
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.coursera.org/account/accomplishments/specialization/certificate/UX2HTEDYMWBN" target="_blank">Data Science Specialization by John Hopkins University	</a>
+                      <div className="duration">Coursera</div>
+                    </div>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.coursera.org/account/accomplishments/specialization/certificate/P9SHCJN2REQF" target="_blank">Applied Data Science with Python by University of Michigan	</a>
+                      <div className="duration">Coursera</div>
+                    </div>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.coursera.org/account/accomplishments/certificate/XXWN6N8855BF" target="_blank">Neural Networks and Deep Learning by deeplearning.ai</a>
+                      <div className="duration">Coursera</div>
+                    </div>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company">Android Programming</a>
+                      <div className="duration">Coding Blocks</div>
+                    </div>
                   </div>
                 </div>
               </div>
